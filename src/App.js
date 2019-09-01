@@ -1,11 +1,13 @@
 import React from 'react';
-import styles from './index.module.css'
-
+import Layout from './components/Layout/Layout'
+import BurgerBuilder from '../src/containers/BurgerBuilder/BurgerBuilder'
 
 function App() {
   return (
-    <div className={styles.only}>
-      This is the only div
+    <div>
+      <Layout>
+        <BurgerBuilder />
+      </Layout>
     </div>
   );
 }
